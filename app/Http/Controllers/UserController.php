@@ -10,6 +10,12 @@ use Illuminate\Validation\Rule;
 class UserController extends Controller
 {
 
+
+    public function index()
+    {
+        return view('user');
+    }
+
     public function get()
     {
         $users = User::all();
@@ -35,7 +41,7 @@ class UserController extends Controller
 
         try {
             $user = new User();
-            // $user->name = $request->input('name');
+            $user->name = $request->input('name');
             $user->email = $request->input('email');
             $user->password = bcrypt($request->input('password'));
             $user->save();

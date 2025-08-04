@@ -301,7 +301,7 @@
                     let html = "";
                     var no = 1;
 
-                    if (users.data == null) {
+                    if (!users || users.length === 0) {
                         html += `
                         <tr>
                             <td colspan="5" class="text-center">No users found</td>

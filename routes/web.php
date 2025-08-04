@@ -14,10 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', [UserController::class,'index']);
 Route::post('add', [UserController::class, 'add'])->name('user.add');
 Route::get('get', [UserController::class, 'get'])->name('user.get');
 Route::get('edit', [UserController::class, 'edit'])->name('user.edit');
