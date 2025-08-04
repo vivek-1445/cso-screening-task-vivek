@@ -1,0 +1,303 @@
+body {
+    background: linear-gradient(135deg, #dbd98e 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: none !important;
+    animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-card .card-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border-radius: 20px 20px 0 0 !important;
+    border: none !important;
+}
+
+.main-card .card-header h5 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.add-user-btn {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.add-user-btn:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.styled-table {
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+.styled-table thead th {
+    background: linear-gradient(90deg, #f8f9ff 0%, #fff 100%);
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+    border: none;
+    padding: 20px 15px;
+}
+
+.styled-table tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.styled-table tbody tr:hover {
+    background: linear-gradient(90deg, #f8f9ff 0%, #fff 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.styled-table tbody td {
+    padding: 18px 15px;
+    vertical-align: middle;
+    border: none;
+}
+
+.user-no {
+    font-weight: bold;
+    color: #667eea;
+    background: rgba(102, 126, 234, 0.1);
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    min-width: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.user-name {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #333;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.user-email {
+    color: #666;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.password-field {
+    font-family: 'Courier New', monospace;
+    color: #999;
+    font-size: 0.9rem;
+    user-select: none;
+    position: relative;
+}
+
+.password-hidden {
+    letter-spacing: 2px;
+}
+
+.password-toggle {
+    margin-left: 8px;
+    color: #667eea;
+    font-size: 12px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.password-field:hover .password-toggle {
+    opacity: 1;
+}
+
+.action-btn {
+    transition: all 0.3s ease;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    font-size: 0.8rem;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(45deg, #667eea, #764ba2) !important;
+    border-color: transparent !important;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-outline-danger:hover {
+    background: linear-gradient(45deg, #f44336, #d32f2f) !important;
+    border-color: transparent !important;
+    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 20px !important;
+    border: none !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 20px 20px 0 0 !important;
+    border: none !important;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.form-control {
+    border-radius: 10px !important;
+    border: 2px solid #e0e0e0;
+    padding: 12px 15px !important;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #667eea !important;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #5a6fd8, #6a4190) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-secondary {
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    font-weight: 600;
+}
+
+.text-danger {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Search functionality (if you want to add it later) */
+.search-container {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px !important;
+    }
+
+    .main-card {
+        margin: 10px 0 !important;
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .action-btn {
+        padding: 6px 8px !important;
+        font-size: 0.7rem !important;
+    }
+}
+
+.btn-edit {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+}
+
+.btn-edit:hover {
+    background: linear-gradient(45deg, #45a049, #3d8b40);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.btn-delete {
+    background: linear-gradient(45deg, #f44336, #d32f2f);
+    color: white;
+}
+
+.btn-delete:hover {
+    background: linear-gradient(45deg, #d32f2f, #b71c1c);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
+}
